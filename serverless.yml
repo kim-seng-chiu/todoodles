@@ -1,5 +1,5 @@
 # NOTE: update this with your service name
-service: todoodles_react
+service: todoodles
 
 # Create an optimized package for our functions 
 package:
