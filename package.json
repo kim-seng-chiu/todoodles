@@ -1,10 +1,13 @@
 {
   "name": "todoodles_react",
+  "jest": {
+    "verbose": true
+  },
   "version": "0.0.3",
   "description": "A Node.js starter for Serverless Framework with ES6 and TypeScript support",
   "main": "handler.js",
   "scripts": {
-    "test": "serverless-bundle test"
+    "test": "jest"
   },
   "author": "",
   "license": "MIT",
@@ -13,13 +16,17 @@
     "url": "https://github.com/AnomalyInnovations/serverless-nodejs-starter.git"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.11.0",
     "aws-sdk": "^2.728.0",
+    "babel-jest": "^26.2.2",
+    "eslint": "^7.6.0",
+    "jest": "^26.2.2",
     "serverless-bundle": "^2.0.0",
     "serverless-dotenv-plugin": "^2.4.2",
     "serverless-offline": "^6.5.0"
   },
   "dependencies": {
-    "eslint": "^7.6.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.10.4",
     "eslint-plugin-react": "^7.20.5",
     "stripe": "^8.83.0",
     "uuid": "^8.3.0"
